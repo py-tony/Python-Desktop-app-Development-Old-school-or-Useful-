@@ -1,4 +1,4 @@
-# Python-Desktop-app-Development-Old-school-or-Useful-
+# Python Desktop app Development Old school or Useful
 
 
 Computers without software are almost useless, especially for ordinary users. While the main software (O.S) is needed to do the heavy-lifting, including controlling how other software and hardware behave, a computer needs a list of software to operate and many other applications for a good user experience. In this article, we will discuss the advantages of making desktop applications and a look at Python GUI programming while answering the questions below.
@@ -9,7 +9,7 @@ Computers without software are almost useless, especially for ordinary users. Wh
 
 Let's face it, codes are ugly! As developers, we can only try to make our code a bit beautiful and readable. But codes are still considered as something supernatural to non-developers. It can be intimidating even to developers when looking at code written in an unfamiliar language. That being said, it is a good idea to make a user interface for our programs. Let us unpack that.
 
-##What are some benefits of GUIs?
+## What are some benefits of GUIs? ##
 
 In marketing, images have the reputation of catching people's attention and encouraging them to take action. Well-designed graphics can even do more, they can give clear and very explicit details about the data or the expected action of users. This, in turn, makes the interface appealing and smoothes the interaction with your computer or the Internet. It also adds a sense of accomplishment for the developer.
 
@@ -17,7 +17,7 @@ We all have been there. After designing a program, we are enthusiastic and want 
 
 Python, like most programming languages, has solutions to challenges, such as web apps, desktop apps, mobile apps, etc. That allows us to make programs with GUIs that can be shared easily via social media or other means of transferring data and can be tested without the need to install all the dependencies required in the development process. This means we cannot make excuses when it comes to GUIs. In this article, we will focus on the Python language and its GUI framework
 
-##Should I make a web app or a desktop app for my project?
+## Should I make a web app or a desktop app for my project? ##
 
 There is no doubt that web apps are better than desktop apps in many ways. They outperform desktop apps in sales, flexibility, innovation, customization, accessibility, accessibility, update, and deployment. However, they fall short when it comes to security and data privacy. There are other reasons why we might have to use or make desktop apps. 
 
@@ -43,7 +43,7 @@ Otherwise, congratulations! You just made a useless GUI.
 In the code above, we just imported the Tkinter library and use its test function to display a test widget. Later on, we will learn more about the libraries and frameworks.
 
 
-##When I decide to make GUI apps with python, what do I need to know to be well equipped?
+## When I decide to make GUI apps with python, what do I need to know to be well equipped? ##
 
 Great decision, and have no fear! Python is still one of the 5 best programming languages for desktop apps. So we are not going in the wrong direction. In fact, the python IDLE itself was built with python using the very same library we just tried now (Tkinter). If you already know python you could jump right into Tkinter and start building some GUI.
 
@@ -71,7 +71,7 @@ Frameworks speed the development process. They provide blueprints and solutions 
 
 As a bonus, we're going to have a quick look at the two of the most popular Frameworks in Python
 
-Tkinter Vs Pyqt5
+## Tkinter Vs Pyqt5 ##
 
 Of course, there are many frameworks to build GUIs in python, Tkinter and Pyqt are just two of the most popular we can find out there. While these tools have one goal in common which is helping you build GUIS, they differ in style and approaches.
 
@@ -84,6 +84,6 @@ Think of Tkinter more like a library than a framework because it allows you to w
 Think of Pyqt as a Framework because there are standards that you need to follow. You might have to separate your GUI script separately from your python script (where you’re writing your logic of the application). Your GUI script is generally generated automatically by another tool called QT designer. You are expected to have a stable knowledge of OOP and be Familiar with MVC. Pyqt5 is also only supported in Python v3.5 and later.
  
 
-conclusion
+## Conclusion ##
 
 The Python programming language has proven to be useful in a range of ways. Its elegance and simplicity, which emphasize natural language, makes it a good choice even for newcomers to programming. As we saw in this article, the language has potential use in developing desktop apps. We also highlighted the advantages of making desktop apps and use-cases compared to web apps. We did not intend to discourage the use or development of web applications. We strongly believe that web apps play a vital role in the world of software because of their flexibility and accessibility. In the article, the author aimed to encourage or empower developers to create GUIs without needing to switch to another form of development or having to think about studying graphic design.
