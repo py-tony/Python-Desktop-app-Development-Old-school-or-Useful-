@@ -1,4 +1,4 @@
-# Python Desktop app Development Old school or Useful
+# Python Desktop app Development: Old school or Useful
 
 
 Computers without software are almost useless, especially for ordinary users. While the main software (O.S) is needed to do the heavy-lifting, including controlling how other software and hardware behave, a computer needs a list of software to operate and many other applications for a good user experience. In this article, we will discuss the advantages of making desktop applications and a look at Python GUI programming while answering the questions below.
