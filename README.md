@@ -120,13 +120,17 @@ def save_joke():
         #clear the text box
         txt_joke.delete('1.0', tk.END)
 ```
-
+Next we're going to create the GUI itself. starting by coding the main window seting up some basic geometry
+```
 #create the main window
 window = tk.Tk()
 
-#setup some basic geometry for out window
+#setup some basic geometry for our window
 window.rowconfigure([0, 1, 2, 3], minsize=50, weight=10)
 window.columnconfigure(0, minsize=50, weight=1)
+```
+Then, we're going to add the necessary widgets to the main window
+```
 
 
 #create and add a button to the main window to generate new jokes when pressed
@@ -148,6 +152,9 @@ txt_joke.grid(row=3, column=0)
 #create and add the button to the main window for saving input
 btn_save = tk.Button(master=window, text="Save", command=save_joke)
 btn_save.grid(row=4, column=0)
+```
+finally we're going to run the GUI by calling the .mainloop() function on the window to ru an infinite loop that allow the application run, wait for an event to occur and process the event as long as the window is not closed.
+```
 
 #run the main loop
 window.mainloop()
