@@ -13,6 +13,7 @@ While it is possible to make a web app calculator, would you not rather prefer a
 From a developer viewpoint, we all don't have to convert to web development or graphic design to be able to make some graphics that allow users to interact with our programs. Many programming languages, like Python, have come up with some good solutions to this problem that sometimes doesn't need extra settings or installations. In this article, we will focus on the Python language.
 To get started with web apps development in python, you need to learn a list of web concepts and a few languages like CSS and HTML. However, making a quick graphical interface for your program that can be executed on your computer may be more convenient than you thought.
 To give you a taste of what you can expect, run from your Python Shell or IDE.
+```python
 import TKinter as tk
 
 tk._test()
@@ -78,12 +79,12 @@ To accomplish that we’re going to need to create a main window, add some widge
 Note: this is not a tutorial on how to build GUI but a demo as an introduction to GUI.
 
 First we’re going to import the needed tool tkinter the library for our GUI and random that will allow us to generate random jokes.
-```
+```python
 import tkinter as tk
 import random 
 ```
 Next we’re going to make sure that the file that will store jokes exists and contains some default jokes.
-```
+```python
 #opening file in w+ mode will open the file if it exists, otherwise it will create it
 with open("jokes.txt","w+") as f:
     joke = f.read()
@@ -94,7 +95,7 @@ with open("jokes.txt","w+") as f:
         f.write("this is not funny \nseriously try it \nI don't know but it working \n")
 ```
 here we’re create two functions one for the button to generate the joke randomly and the other for the button to save new jokes.
-```
+```python
 def joke_generator():
     """generate random jokes from the file jokes.txt and display the text to the label lbl_display_joke"""
     #we open the file and read it contents
@@ -106,7 +107,7 @@ def joke_generator():
         lbl_display_joke.config( text = random.choice(jokes))
 ```
 Define a function called save_joke() that will help to get joke that the user enter in the text box and save it to the file
-```
+```python
 def save_joke():
     """get text from the txt box txt_joke and save new joke to the file jokes"""
     #open the file and read it content using the .read() function so that it return data in form of a string
@@ -121,7 +122,7 @@ def save_joke():
         txt_joke.delete('1.0', tk.END)
 ```
 Next we're going to create the GUI itself. starting by coding the main window seting up some basic geometry
-```
+```python
 #create the main window
 window = tk.Tk()
 
@@ -130,7 +131,7 @@ window.rowconfigure([0, 1, 2, 3], minsize=50, weight=10)
 window.columnconfigure(0, minsize=50, weight=1)
 ```
 Then, we're going to add the necessary widgets to the main window
-```
+```python
 
 
 #create and add a button to the main window to generate new jokes when pressed
@@ -154,12 +155,11 @@ btn_save = tk.Button(master=window, text="Save", command=save_joke)
 btn_save.grid(row=4, column=0)
 ```
 finally we're going to run the GUI by calling the .mainloop() function on the window to ru an infinite loop that allow the application run, wait for an event to occur and process the event as long as the window is not closed.
-```
-
+```python
 #run the main loop
 window.mainloop()
 ```
-Output
+`Output`
 
 
 
