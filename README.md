@@ -80,41 +80,46 @@ Note: this is not a tutorial on how to build GUI but a demo as an introduction t
 First we’re going to import the needed tool tkinter the library for our GUI and random that will allow us to generate random jokes.
 ```
 import tkinter as tk
-from random import *
+import random 
 ```
-Next we’re going to make sure that the file that will store jokes exists and contain some default jokes.
+Next we’re going to make sure that the file that will store jokes exists and contains some default jokes.
 ```
-#.open() will open the file if it exist else create it
-with open("jokes.txt","r+") as f:
+#opening file in w+ mode will open the file if it exists, otherwise it will create it
+with open("jokes.txt","w+") as f:
     joke = f.read()
 
-    # check if the element returned from the file is empty
+    # check if the list is empty
     #if so write some default jokes to the file
     if len(joke) == 0:
-        print()
-        print("yes it it")
         f.write("this is not funny \nseriously try it \nI don't know but it working \n")
-
-here we’re create the needed functions 
+```
+here we’re create two functions one for the button to generate the joke randomly and the other for the button to save new jokes.
 ```
 def joke_generator():
-    """generate random jokes from the file jokes.txt"""
-
+    """generate random jokes from the file jokes.txt and display the text to the label lbl_display_joke"""
+    #we open the file and read it contents
+    #read the file using the .readlines() function so that it return data in form of a list
     with open("jokes.txt", "r+") as f:
         jokes = f.readlines()
-        lbl_display_joke.config( text = choice(jokes))
-
-
+        #using the .choice() function of the random module to pick a random item(joke) 
+        #and update the text on the label that displays jokes.
+        lbl_display_joke.config( text = random.choice(jokes))
+```
+Define a function called save_joke() that will help to get joke that the user enter in the text box and save it to the file
+```
 def save_joke():
-    """save new joke to the file jokes"""
-
+    """get text from the txt box txt_joke and save new joke to the file jokes"""
+    #open the file and read it content using the .read() function so that it return data in form of a string
     with open("jokes.txt", "r+") as f:
         jokes = f.read()
+        #check if the text box contain any text
+        #get the txt entered in the txt box and write the text to the file
         new_joke = txt_joke.get(1.0, tk.END)
-        print(new_joke)
         f.write(new_joke)
-        txt_joke.delete('1.0', tk.END)
 
+        #clear the text box
+        txt_joke.delete('1.0', tk.END)
+```
 
 #create the main window
 window = tk.Tk()
@@ -124,7 +129,7 @@ window.rowconfigure([0, 1, 2, 3], minsize=50, weight=10)
 window.columnconfigure(0, minsize=50, weight=1)
 
 
-#create and add the button to the main window
+#create and add a button to the main window to generate new jokes when pressed
 btn_generate = tk.Button(master=window, text="Generate a Random Joke", command=joke_generator)
 btn_generate.grid(row=0, column=0)
 
@@ -132,11 +137,11 @@ btn_generate.grid(row=0, column=0)
 lbl_display_joke = tk.Label(master=window, text="No joke as been generated yet", bg="white")
 lbl_display_joke.grid(row=1, column=0)
 
-#create and add to the main window on top of the text field
+#create and add a label to the main window on top of the text field
 lbl_add_joke = tk.Label(master=window, text="Enter new Joke")
 lbl_add_joke.grid(row=2, column=0)
 
-#create and add to the main window a text field
+#create and add a text bot to the main window that will serve as entry field for new jokes
 txt_joke = tk.Text(master=window) 
 txt_joke.grid(row=3, column=0)
 
@@ -156,6 +161,7 @@ Output
 
 
 
+For your reference, get the source code here. And instructions on how to make it an excutable file (demo.exe) 
 Conclusion
 The Python programming language has proven to be useful in a range of ways. Its elegance and simplicity, which emphasize natural language, makes it a good choice even for newcomers to programming. As we saw in this article, the language has potential use in developing desktop apps. We also highlighted the advantages of making desktop apps and use-cases compared to web apps. We did not intend to discourage the use or development of web applications. We strongly believe that web apps play a vital role in the world of software because of their flexibility and accessibility. In the article, the author aimed to encourage or empower developers to create GUIs without needing to switch to another form of development or having to think about studying graphic design.
 
