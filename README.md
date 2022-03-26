@@ -22,7 +22,7 @@ There is no doubt that web apps are better than desktop apps in many ways. They 
 
 While it is possible to make a web app calculator, would you not rather prefer a local calculator on your device than surf the net just to get a sum? Do you really need to open a browser to sort out your files in that USB? We do appreciate google docs, but that is nothing compared to excel. Besides their physicality and convenience, some functionalities on desktop apps are internet free. That makes desktop apps the first choice, especially in areas where the internet is expensive or not reliable.
 
-From a developer viewpoint, we all don't have to convert to web development or graphic design to be able to make some graphics that allow users to interact with our programs. Many programming languages, like Python, have come up with some good solutions to this problem that sometimes doesn't need extra settings or installations. In this article, we will focus on the Python language
+From a developer viewpoint, we all don't have to convert to web development or graphic design to be able to make some graphics that allow users to interact with our programs. Many programming languages, like Python, have come up with some good solutions to this problem that sometimes doesn't need extra settings or installations.
 
 To get started with web apps development in python, you need to learn a list of web concepts and a few languages like CSS and HTML. However, making a quick graphical interface for your program that can be executed on your computer may be more convenient than you thought.
 To give you a taste of what you can expect, run from your Python Shell or IDE.
@@ -32,17 +32,21 @@ import TKinter as tk
 tk._test()
 ```
 This checks if Tkinter is installed. Since TKinter generally comes pre-installed with python. You should get a GUI displayed depending on your operating system.
-Screen shot here
+
 If you run into trouble you might want to [manually install Tkinter](https://www.tutorialspoint.com/how-to-install-tkinter-in-python).
 
-Note: The code above and the rest of the example codes in this tutorial should run if Python was installed with the official installer for Widows or macOs from python.com.
+Note: The code above and the rest of the example codes in this tutorial should run if Python was installed with the official installer for Widows or macOs.
 
 
 
 ## When I decide to make GUI apps with python, what do I need to know to be well equipped?
-Great decision, and have no fear! Python is still one of the 5 best programming languages for desktop apps. So we are not going in the wrong direction. In fact, the python IDLE itself was built with python using the very same library we just tried now (Tkinter). If you are already comfortable with Python, you could jump right into Tkinter and start building some GUI.
+
+Python is still one of the 5 best programming languages for desktop apps. So we are not going in the wrong direction. In fact, the python IDLE itself was built with python using the very same library we just tried now (Tkinter). If you are already comfortable with Python, you could jump right into Tkinter and start building some GUI.
+
 However, there is no easy way to become a desktop app developer. 
+
 The truth is that web apps are fairly complex to make than desktop apps. Think about it, you need to learn at least three different coding languages for your style, markup, and query language on top of the framework language. Then you have to worry about how to roll it out, where to get the domain name, who will host your site, etc., etc. With desktop app development in Python, guess how many programming languages you need to learn? You might be expected to be familiar with some CSS or styling standards. But that is not a hard requirement. Does that mean that this is going to be an easy journey?
+
 Python desktop app developers are expected to have a solid understanding of;
 
 ### Python
