@@ -1,4 +1,4 @@
-# Python Desktop app Developement: Old School or Useful
+2# Python Desktop app Developement: Old School or Useful
 
 Computers without software are almost useless, especially for ordinary users. While the main software (O.S) is needed to do the heavy-lifting, including controlling how other software and hardware behave, a computer needs a list of software to operate and many other applications for a good user experience. In this article, we will discuss the advantages of making desktop applications and a look at Python GUI programming while answering the questions below.
 
@@ -75,7 +75,7 @@ Of course, there are many frameworks to build GUIs in python, Tkinter and Pyqt a
 
 ### Tkinter
 
-Think of Tkinter more like a library than a framework because it allows you to write GUIs yourself, program your settings or functionality in the same script. It offers more learning opportunities and is easy to control. It is also not strict on OOP and MVC(model, view, control) programming style which makes it suitable for simple tasks. Check out this article by Prachi Prakash for a Guide to Standard GUI library in Python with TKinter.
+Think of Tkinter more like a library than a framework because it allows you to write GUIs yourself, program your settings or functionality in the same script. It offers more learning opportunities and is easy to control. It is also not strict on OOP and MVC(model, view, control) programming style which makes it suitable for simple tasks. Check out this [article by Prachi Prakash for a Guide to Standard GUI library in Python with TKinter](https://www.analyticsvidhya.com/blog/2021/01/beginners-guide-to-standard-gui-library-in-python-tkinter/).
 
 ### Pyqt5
 
@@ -94,7 +94,7 @@ We are going to create a program called joke generator that will look roughly li
 To accomplish this we’re going to need to create a main window, add some widgets to it, and some functions that will make the GUI interactive. 
 Note: this is not a tutorial on how to build GUI but a demo as an introduction to GUI.
 
-First we’re going to import the needed tool tkinter the library for our GUI and random that will allow us to generate random jokes.
+First we’re going to import the needed tool tkinter the library for our GUI and the Random module that will allow us to generate random jokes.
 ```python
 import tkinter as tk
 import random 
