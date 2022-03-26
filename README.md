@@ -43,9 +43,11 @@ Note: The code above and the rest of the example codes in this tutorial should r
 
 Python is still one of the 5 best programming languages for desktop apps. So we are not going in the wrong direction. In fact, the python IDLE itself was built with python using the very same library we just tried now (Tkinter). If you are already comfortable with Python, you could jump right into Tkinter and start building some GUI.
 
-However, there is no easy way to become a desktop app developer. 
 
-The truth is that web apps are fairly complex to make than desktop apps. Think about it, you need to learn at least three different coding languages for your style, markup, and query language on top of the framework language. Then you have to worry about how to roll it out, where to get the domain name, who will host your site, etc., etc. With desktop app development in Python, guess how many programming languages you need to learn? You might be expected to be familiar with some CSS or styling standards. But that is not a hard requirement. Does that mean that this is going to be an easy journey?
+However, there is no easy way to become a desktop app developer. 
+The truth is that web apps are fairly complex to make than desktop apps. Think about it, you need to learn at least three different coding languages for your style, markup, and query language on top of the framework language. Then you have to worry about how to roll it out, where to get the domain name, who will host your site, etc., etc. 
+
+With desktop app development in Python, guess how many programming languages you need to learn? You might be expected to be familiar with some CSS or styling standards. But that is not a hard requirement. Does that mean that this is going to be an easy journey?
 
 Python desktop app developers are expected to have a solid understanding of;
 
