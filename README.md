@@ -53,19 +53,19 @@ Python desktop app developers are expected to have a solid understanding of;
 
 ### Python
 
-This shouldn't be a surprise. If we are to develop stuff with Python we need to be familiar, or be comfortable with the language. If you have no knowledge of the language, you can start by learning the Python programming language. Python is one the easiest and most elegant programming languages to learn, and you can even find volunteer mentors for free like @pyTony.
+This shouldn't be a surprise. If we are to develop stuff with Python we need to be familiar, or be comfortable with the language. If you have no knowledge of the language, you can start by learning the Python programming language. Python is one the easiest and most elegant programming languages to learn, and you can even find volunteer mentors for free like [@pyTony](https://py-tony.netlify.app/mentor#gsc.tab=0).
 
 ### Object orientated programming (OOP) 
 
-There is a concept called DRY in programming, and OOP helps you to achieve just that. Besides, saving you from repeating codes and logic in your program OOP also makes your code look more clean and maintainable. You could get more information about OOP here.
+There is a concept called DRY in programming, and OOP helps you to achieve just that. Besides, saving you from repeating codes and logic in your program OOP also makes your code look more clean and maintainable.
 
 ### Libraries
 
-Like the literal meaning suggests (a room containing a collection of books), programming libraries aim to facilitate some configurations and comes with prewritten codes to help us achieve specific tasks. There are several libraries in Python to accomplish different tasks. When it comes to GUIs, we still have some decisions to make about which library will suit a given project or our programming style. Having the ability to use them effectively and understand when and why to do so is a skill we shouldn't overlook. (Resource)
+Like the literal meaning suggests (a room containing a collection of books), programming libraries aim to facilitate some configurations and comes with prewritten codes to help us achieve specific tasks. There are several libraries in Python to accomplish different tasks. When it comes to GUIs, we still have some decisions to make about which library will suit a given project or our programming style. Having the ability to use them effectively and understand when and why to do so is a skill we shouldn't overlook.
 
 ### Frameworks
 
-Frameworks speed the development process. They provide blueprints and solutions that are tailored for a given task. A framework can be thought of as a workplace where things are structured and things must be done according to a certain method. While the words library and framework are often used interchangeably in programming, they are different. Understanding their differences will empower us to know when and why to use them. For an in-depth comparison of libraries and frameworks in computer science, check out this article.
+Frameworks speed the development process. They provide blueprints and solutions that are tailored for a given task. A framework can be thought of as a workplace where things are structured and things must be done according to a certain method. While the words library and framework are often used interchangeably in programming, they are different. Understanding their differences will empower us to know when and why to use them.
 
 As a bonus, we're going to have a quick look at the two of the most popular Frameworks in Python.
 
