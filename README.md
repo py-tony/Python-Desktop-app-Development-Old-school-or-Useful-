@@ -1,4 +1,4 @@
-2# Python Desktop app Developement: Old School or Useful
+# Python Desktop app Developement: Old School or Useful
 
 Computers without software are almost useless, especially for ordinary users. While the main software (O.S) is needed to do the heavy-lifting, including controlling how other software and hardware behave, a computer needs a list of software to operate and many other applications for a good user experience. In this article, we will discuss the advantages of making desktop applications and a look at Python GUI programming while answering the questions below.
 
@@ -170,7 +170,7 @@ txt_joke.grid(row=3, column=0)
 btn_save = tk.Button(master=window, text="Save", command=save_joke)
 btn_save.grid(row=4, column=0)
 ```
-finally we're going to run the GUI by calling the .mainloop() function on the window to ru an infinite loop that allow the application run, wait for an event to occur and process the event as long as the window is not closed.
+finally we're going to run the GUI by calling the .mainloop() function on the window to run an infinite loop that allow the application run, wait for an event to occur and process the event as long as the window is not closed.
 ```python
 #run the main loop
 window.mainloop()
