@@ -1,9 +1,10 @@
 
 import tkinter as tk
+from tkinter import messagebox
 from random import *
 
 
-#.open() will open the file if it exist else create it
+#.open() will open the file if it exist otherwise create it
 with open("jokes.txt","w+") as f:
 
 
@@ -12,16 +13,15 @@ with open("jokes.txt","w+") as f:
     # check if the element returned from the file is empty
     #if so write some default jokes to the file
     if len(joke) == 0:
-        print()
-        print("yes it it")
         f.write("this is not funny \nseriously try it \nI don't know but it working \n")
 
 
 def joke_generator():
     """generate random jokes from the file jokes.txt"""
-
+    #open the file jokes in a list format
     with open("jokes.txt", "r+") as f:
         jokes = f.readlines()
+        #pick a random line in the list returned and update the label that displays jokes
         lbl_display_joke.config( text = choice(jokes))
 
 
@@ -41,7 +41,8 @@ def save_joke():
             txt_joke.delete('1.0', tk.END)
         else:
             #otherwise display an error msg
-            print("Invalid or No text to save")
+            messagebox.showerror("Invalid input", "Sorry that doesn't look like a joke")
+            
 
 
 
@@ -49,7 +50,7 @@ def save_joke():
 #create the main window
 window = tk.Tk()
 
-#setup some basic geometry for out window
+#set up some basic geometries for our window
 window.rowconfigure([0, 1, 2, 3], minsize=50, weight=10)
 window.columnconfigure(0, minsize=50, weight=1)
 
