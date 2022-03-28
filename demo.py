@@ -1,13 +1,12 @@
 
 import tkinter as tk
+# the messagebox is a class in the tkinter library that allows us to display dialog
 from tkinter import messagebox
 from random import *
 
 
 #.open() will open the file if it exist otherwise create it
 with open("jokes.txt","w+") as f:
-
-
     joke = f.read()
     
     # check if the element returned from the file is empty
@@ -18,6 +17,7 @@ with open("jokes.txt","w+") as f:
 
 def joke_generator():
     """generate random jokes from the file jokes.txt"""
+    
     #open the file jokes in a list format
     with open("jokes.txt", "r+") as f:
         jokes = f.readlines()
@@ -29,7 +29,6 @@ def save_joke():
     """save new joke to the file jokes"""
 
     with open("jokes.txt", "r+") as f:
-
         #get the txt entered in the txt box
         new_joke = txt_joke.get(1.0, tk.END)
         #check if the text box contain any text
